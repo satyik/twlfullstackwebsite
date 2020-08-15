@@ -1,0 +1,28 @@
+<html lang="en">
+<%- include("./partials1/head.ejs") %>
+
+<body>
+  <%- include("./partials1/nav.ejs") %>
+
+  <div class="blogs content">
+    <h2>All Blogs</h2>
+
+    <% if (blogs.length > 0) { %>
+      <% blogs.forEach(blog => { %>
+        <a class="single" href="/blogs/<%= blog._id %>">
+          <h3 class="title"><%= blog.title %></h3>
+          <p class="snippet"><%= blog.snippet %></p>
+          <p class="snippet"><%= blog.date %></p>
+          <p class="snippet"><%= blog.link %></p>
+        </a>
+      <% }) %>
+    <% } else { %>
+      <p>There are no blogs to display...</p>
+    <% } %>
+    
+  </div>
+
+  <%- include("./partials1/footer.ejs") %>
+  <a href="/users/logout" class="btn btn-secondary">Logout</a>
+</body>
+</html>

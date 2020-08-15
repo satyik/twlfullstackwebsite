@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Sahitya&family=Scheherazade:wght@700&family=Signika&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Sahitya', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+    padding: 1em 1.8em .8em;
+    margin: 0 auto;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 5em;
+    margin-top: .6em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: flex;
+    padding-top: 1em;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #000000;
+    background-color: inherit;
+    text-align: right;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+section {
+    padding-left: 5em;
+    padding-top: 2.5em;
+    color: gray;
+}
+
+h2 {
+    font-family: 'Scheherazade', serif;
+    font-size: 27px;
+}
+section h2 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-family: 'Signika', serif;
+    padding: 0.6em 0 0.6em;
+}
+
+section p {
+    color: #F52424;
+    font-size: 30px;
+    margin-bottom: 2.5em;
+}
+
+.scroll {
+    width: 10%;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+
+.red-container {
+    width: 100%;
+    margin-top: 5%;
+    background: #F52424;
+    color: #fff;
+    padding: 2em 0;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.red-container .container {
+    transform: skewY(2deg);
+}
+
+.red-container p {
+    font-size: 28px;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -4%;
+    margin-bottom: 2em;
+}
+
+.gray-container h2 {
+    padding: 2em 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F52424;
+}
+
+.gray-container ul {
+    display: flex;
+}
+
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1em 0 4em;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .footer-container {
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0 0;
+    border-top-right-radius: 40px;
+}
+
+.footer-container .container {
+    padding-bottom: 3em;
+}
+
+h3 {
+    color: #fff;
+}
+
+footer .social {
+    text-align: right;
+    width: 2%;
+    margin: 0 auto;
+    padding: .5em;
+
+}
